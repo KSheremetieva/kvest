@@ -55,7 +55,7 @@ var bundle =
 
 	var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
 
-	var _mainDir = __webpack_require__(6);
+	var _mainDir = __webpack_require__(7);
 
 	var _mainDir2 = _interopRequireDefault(_mainDir);
 
@@ -42724,14 +42724,29 @@ var bundle =
 
 	var _app = __webpack_require__(1);
 
+	var _questing = __webpack_require__(6);
+
+	var _questing2 = _interopRequireDefault(_questing);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_app.app.controller('mainCtrl', function ($scope) {
-		$scope.data = 'hello';
+		$scope.data = _questing2.default;
 	});
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+		exports.default = [{ 'pass1': 'text1' }, { 'pass2': 'text2' }, { 'pass3': 'text3' }, { 'pass4': 'text4' }, { 'pass5': 'text5' }, { 'pass6': 'text6' }, { 'pass7': 'text7' }, { 'pass8': 'text8' }];
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42748,7 +42763,7 @@ var bundle =
 
 	__webpack_require__(5);
 
-	var _mainDir = __webpack_require__(7);
+	var _mainDir = __webpack_require__(8);
 
 	var _mainDir2 = _interopRequireDefault(_mainDir);
 
@@ -42770,10 +42785,14 @@ var bundle =
 		});
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>\n\n\n\n<div class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>";
+=======
+	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>";
+>>>>>>> 51cfd866999c6614ebdb941e2877bbaff6b10813
 
 /***/ }
 /******/ ]);
