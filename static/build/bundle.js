@@ -42796,7 +42796,19 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div ng-if=\"flag\" class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"color\">Your Password</h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB\">Move On</button>\n</div>\n\n\n\n<!-- <div ng-if=\"ques == false\" class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div> -->\n\n\n<div ng-if=\"!flag\" class=\"col-xs-6 center task\">\n<div ng-if=\"ques != false\" class=\"alert alert-info\">\n  <strong>YOUR TASK!</strong> {{ques}}\n</div>\n\n<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\n</div>\n";
+=======
+<<<<<<< HEAD
+	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"alert alert-danger\">\r\n  <b>Check Your Password!</b> It isn't correct.\r\n</div>";
+=======
+<<<<<<< HEAD
+	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>\n\n\n\n<div class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>";
+=======
+	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>";
+>>>>>>> 51cfd866999c6614ebdb941e2877bbaff6b10813
+>>>>>>> 52617c7fb282715858b1159f471fb4f05232a6a7
+>>>>>>> 02ae23eaa9306f4f6185ef43d67ea7d77a91298c
 
 /***/ }
 /******/ ]);
