@@ -42762,7 +42762,8 @@ var bundle =
 			template: _mainDir2.default,
 			link: function link(scope, element, attributes) {
 				scope.check = function (password) {
-					$scope.checkPass(password);
+					alert(password);
+					// $scope.checkPass(password);
 				};
 			}
 		};
@@ -42772,7 +42773,7 @@ var bundle =
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>";
+	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>\n\n\n\n<div class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>";
 
 /***/ }
 /******/ ]);

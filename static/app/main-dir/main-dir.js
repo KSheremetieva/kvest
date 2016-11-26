@@ -12,7 +12,8 @@ app.directive('mainDir', function(){
 		template: main_template,
 		link: function(scope, element, attributes){
 			scope.check = password=>{
-				$scope.checkPass(password);
+				alert(password);
+				// $scope.checkPass(password);
 			}
 
 		}
