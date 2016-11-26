@@ -1,4 +1,5 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../node_modules/animate-scss/animate.scss';
 
 
 .dva { 
@@ -9,6 +10,7 @@
   color: #000;
   background: #fff;
   mix-blend-mode: lighten;
+  animation: 1s zoomInLeft;
 }
 
 .center{
