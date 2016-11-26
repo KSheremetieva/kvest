@@ -18591,12 +18591,12 @@ button.close {
 }
 
 @font-face {
-  font-family: daniel;
-  src: url(96157c3ee2ac00fba7cee04cae0b02a2.ttf);
+  font-family: oswald;
+  src: url(e605f2f859072ed0443aeda5adec4181.ttf);
 }
 
 * {
-  font-family: daniel;
+  font-family: oswald;
 }
 
 .center {

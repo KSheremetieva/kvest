@@ -7,6 +7,10 @@ import quest from '../../questing.js'
 app.controller('mainCtrl', function($scope){
 	$scope.data = quest;
 	$scope.checkPass = pass=> {
-
+	for (var i= 0; i< data.lenght; i++) {
+			if(data[i].pass === pass)
+				return data[i].pass;
+		}
+		return false;
 	}
 });
