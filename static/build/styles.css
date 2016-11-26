@@ -18611,7 +18611,7 @@ button.close {
 }
 
 .blue {
-  color: blue;
+  color: tomato;
   animation: 1s bounceInUp;
 }
 
@@ -18627,7 +18627,11 @@ button {
   position: relative;
   top: 1%;
   left: 70%;
-  animation: 1s flipInX;
+  animation: 1s slideOutDown;
+}
+
+.alert {
+  animation: 1s rollIn;
 }
 
 

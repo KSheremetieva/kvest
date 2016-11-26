@@ -42732,7 +42732,8 @@ var bundle =
 
 	_app.app.controller('mainCtrl', function ($scope) {
 		$scope.data = _questing2.default;
-	});
+		$scope.checkPass = function (pass) {};
+		});
 
 /***/ },
 /* 6 */
@@ -42777,7 +42778,8 @@ var bundle =
 			template: _mainDir2.default,
 			link: function link(scope, element, attributes) {
 				scope.check = function (password) {
-					$scope.checkPass(password);
+					alert(password);
+					// $scope.checkPass(password);
 				};
 			}
 		};
@@ -42787,7 +42789,7 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>";
+	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"alert alert-danger\">\r\n  <b>Check Your Password!</b> It isn't correct.\r\n</div>";
 
 /***/ }
 /******/ ]);
