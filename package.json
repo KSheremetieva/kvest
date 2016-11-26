@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kazminaolya/app#readme",
   "dependencies": {
     "angular": "^1.5.8",
+    "animate-scss": "^3.2.1",
     "bootstrap": "^3.3.7",
     "webpack": "^1.13.2"
   },

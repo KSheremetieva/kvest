@@ -42761,7 +42761,9 @@ var bundle =
 			controller: 'mainCtrl',
 			template: _mainDir2.default,
 			link: function link(scope, element, attributes) {
-				scope.main = 'main work';
+				scope.check = function (password) {
+					$scope.checkPass(password);
+				};
 			}
 		};
 		});
@@ -42770,7 +42772,7 @@ var bundle =
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input type=\"text\" class=\"form-control\" aria-label=\"Text input with checkbox\">\n</div>";
+	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>";
 
 /***/ }
 /******/ ]);

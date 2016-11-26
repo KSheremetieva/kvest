@@ -18610,13 +18610,23 @@ button.close {
   left: 25%;
 }
 
-input {
-  animation: 1s bounceInUp;
-}
-
 .blue {
   color: blue;
   animation: 1s bounceInUp;
+}
+
+input {
+  animation: 1s rotateInUpLeft;
+}
+
+.color-text {
+  color: red;
+}
+
+button {
+  position: relative;
+  left: 70%;
+  animation: 1s flipInX;
 }
 
 
