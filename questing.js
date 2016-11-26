@@ -1,4 +1,4 @@
-var quest =[
+export default [
     {'pass1': 'text1'},
     {'pass2': 'text2'},
     {'pass3': 'text3'},

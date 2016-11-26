@@ -11,7 +11,10 @@ app.directive('mainDir', function(){
 		controller: ('mainCtrl'),
 		template: main_template,
 		link: function(scope, element, attributes){
-			scope.main = 'main work';
+			scope.check = password=>{
+				$scope.checkPass(password);
+			}
+
 		}
 	}
 })
