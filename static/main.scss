@@ -1,0 +1,18 @@
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+
+.dva { 
+  background: linear-gradient(blue, red);
+}
+.dva h1 { 
+  text-align: center;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: lighten;
+}
+
+.center{
+	position: absolute;
+	top: 25%;
+	left:25%;
+}
