@@ -42770,7 +42770,7 @@ var bundle =
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-6 center animated zoomInDown\">\n\t<div class=\"dva\">\n \t\t<h1 class=\"animated zoomIn\">Your Password<h1>\n\t</div>\n\n\t\t<input type=\"text\" class=\"form-control animated wobble\" aria-label=\"Text input with checkbox\">\n</div>";
+	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input type=\"text\" class=\"form-control\" aria-label=\"Text input with checkbox\">\n</div>";
 
 /***/ }
 /******/ ]);

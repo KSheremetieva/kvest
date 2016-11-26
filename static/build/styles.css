@@ -18590,22 +18590,33 @@ button.close {
   }
 }
 
-.dva {
-  background: linear-gradient(blue, red);
+@font-face {
+  font-family: daniel;
+  src: url(96157c3ee2ac00fba7cee04cae0b02a2.ttf);
 }
 
-.dva h1 {
-  text-align: center;
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
-  animation: 1s zoomInLeft;
+* {
+  font-family: daniel;
 }
 
 .center {
   position: absolute;
   top: 25%;
   left: 25%;
+}
+
+.relat {
+  position: relative;
+  left: 25%;
+}
+
+input {
+  animation: 1s bounceInUp;
+}
+
+.blue {
+  color: blue;
+  animation: 1s bounceInUp;
 }
 
 
