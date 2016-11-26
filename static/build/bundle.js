@@ -42732,7 +42732,8 @@ var bundle =
 
 	_app.app.controller('mainCtrl', function ($scope) {
 		$scope.data = _questing2.default;
-	});
+		$scope.checkPass = function (pass) {};
+		});
 
 /***/ },
 /* 6 */
@@ -42776,9 +42777,16 @@ var bundle =
 			controller: 'mainCtrl',
 			template: _mainDir2.default,
 			link: function link(scope, element, attributes) {
+				scope.password = 'enter your pass';
+				scope.flag = true;
 				scope.check = function (password) {
-					alert(password);
-					// $scope.checkPass(password);
+					// alert(password);
+					scope.checkPass(password);
+					scope.flag = false;
+				};
+
+				scope.back = function () {
+					scope.flag = true;
 				};
 			}
 		};
@@ -42788,11 +42796,7 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
-<<<<<<< HEAD
-	module.exports = "<div class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"blue\">Your Password<h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\n</div>\n\n\n\n<div class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>";
-=======
-	module.exports = "<div class=\"col-xs-6 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"blue\">Your Password<h1>\r\n\t</div>\r\n\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default left\">Move On</button>\r\n</div>";
->>>>>>> 51cfd866999c6614ebdb941e2877bbaff6b10813
+	module.exports = "<div ng-if=\"flag\" class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"color\">Your Password</h1>\n\t</div>\n\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control color-text\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB\">Move On</button>\n</div>\n\n\n\n<!-- <div ng-if=\"ques == false\" class=\"alert alert-danger\">\n  <b>Check Your Password!</b> It isn't correct.\n</div> -->\n\n\n<div ng-if=\"!flag\" class=\"col-xs-6 center task\">\n<div ng-if=\"ques != false\" class=\"alert alert-info\">\n  <strong>YOUR TASK!</strong> {{ques}}\n</div>\n\n<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\n</div>\n";
 
 /***/ }
 /******/ ]);

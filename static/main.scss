@@ -1,18 +1,21 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 @import '../node_modules/animate-scss/animate.scss';
-@import './fonts/danielbd.ttf';
+// @import './fonts/danielbd.ttf';
 
 
 @font-face{
-	font-family: oswald;
-	src: url('./fonts/Oswald-Regular.ttf');
+	font-family: myriad;
+	src: url('./fonts/Myriad.ttf');
 }
 
 
 *{
-	font-family: oswald;
+	font-family: myriad;
 	
 }
+
+
+//PASS
 
 .center{
 	position: absolute;
@@ -25,9 +28,9 @@
 	left: 25%;
 }
 
-.blue{
+.color{
 	color: tomato;
-	animation: 1s bounceInUp;
+	animation: 1s bounceInDown;
 }
 
 input{
@@ -38,13 +41,25 @@ input{
 		color: red;
 }
 
-button{
+.passB{
 	position: relative;
-	top:1%;
+	top:5%;
 	left: 70%;
 	animation: 1s slideOutDown;
 }
 
+
+//TASK
+
+.task{
+	position: relative;
+}
+
 .alert{
-	animation: 1s rollIn;
+	animation: 1s fadeInLeft;
+}
+
+.taskB{
+	position: absolute;
+	animation: 1s fadeInRigth;
 }
