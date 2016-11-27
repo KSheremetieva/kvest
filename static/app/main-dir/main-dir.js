@@ -15,8 +15,9 @@ app.directive('mainDir', function(){
 			scope.flag = true;
 			scope.check = password=>{
 				// alert(password);
-				scope.checkPass(password);
+				scope.recuest = scope.checkPass(password);
 				scope.flag = false;
+				console.log(scope.recuest);
 			}
 
 			scope.back=()=>{

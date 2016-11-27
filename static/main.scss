@@ -18,32 +18,44 @@
 //PASS
 
 .center{
+	// width: 90%;
+	// height: 40%;
+	// position: absolute;
+	// top: 30%;
+	// left: 5%;
 	position: absolute;
 	top: 25%;
 	left:25%;
+
+	// border: 1px solid;
 }
 
-.relat{
-	position: relative;
-	left: 25%;
-}
-
-.color{
+.h1{
+	// position: relative;
+	// top: 10%;
+	// left: 15%;
 	color: tomato;
+	// font-size: 70px;
 	animation: 1s bounceInDown;
 }
 
-input{
+.size{ 
+	// position: relative;
+	// top: 10%;
+	// left: 0%;
+	// height: 70px;
+	// font-size: 55px;
+	// line-height: 60px;
+	color: red;
 	animation: 1s rotateInUpLeft;
 }
 
-.color-text{
-		color: red;
-}
-
 .passB{
-	position: relative;
-	top:5%;
+	// height: 50px;
+	// font-size: 45px;
+	// line-height: 50px;
+	position: absolute;
+	// bottom: 40%;
 	left: 70%;
 	animation: 1s slideOutDown;
 }
@@ -52,14 +64,22 @@ input{
 //TASK
 
 .task{
-	position: relative;
-}
-
-.alert{
+	// height: 50%;
+	// font-size: 50px;
+	// line-height: 55px;
 	animation: 1s fadeInLeft;
 }
 
 .taskB{
-	position: absolute;
+	// height: 50px;
+	// font-size: 45px;
+	// line-height: 50px;
+	// position: absolute;
 	animation: 1s fadeInRigth;
+}
+
+//ERROR
+.error{
+	// font-size: 45px;
+	// line-height: 50px;
 }

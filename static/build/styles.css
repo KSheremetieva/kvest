@@ -18605,41 +18605,27 @@ button.close {
   left: 25%;
 }
 
-.relat {
-  position: relative;
-  left: 25%;
-}
-
-.color {
+.h1 {
   color: tomato;
   animation: 1s bounceInDown;
 }
 
-input {
+.size {
+  color: red;
   animation: 1s rotateInUpLeft;
 }
 
-.color-text {
-  color: red;
-}
-
 .passB {
-  position: relative;
-  top: 5%;
+  position: absolute;
   left: 70%;
   animation: 1s slideOutDown;
 }
 
 .task {
-  position: relative;
-}
-
-.alert {
   animation: 1s fadeInLeft;
 }
 
 .taskB {
-  position: absolute;
   animation: 1s fadeInRigth;
 }
 

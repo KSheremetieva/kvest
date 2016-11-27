@@ -1,22 +1,21 @@
 <div ng-if="flag" class="col-xs-6 center">
 	<div class="relat">
- 		<h1 class="color">Your Password</h1>
+ 		<h1 class="h1">Your Password</h1>
 	</div>
-
-		<input ng-model="password" type="text" class="form-control color-text" aria-label="Text input with checkbox">
+		<input ng-model="password" type="text" class="form-control size" aria-label="Text input with checkbox">
 		<button ng-click="check(password)" type="button" class="btn btn-default passB">Move On</button>
 </div>
 
 
 
-<!-- <div ng-if="ques == false" class="alert alert-danger">
+<div ng-if="ques == undefined" class="alert alert-danger error">
   <b>Check Your Password!</b> It isn't correct.
-</div> -->
+</div>
 
 
-<div ng-if="!flag" class="col-xs-6 center task">
-<div ng-if="ques != false" class="alert alert-info">
-  <strong>YOUR TASK!</strong> {{ques}}
+<div ng-if="!flag" class="col-xs-6 center">
+<div ng-if="quest != false" class="alert alert-info task">
+  <strong>YOUR TASK:</strong> {{!!recuest?recuest:'Nan'}}
 </div>
 
 <button ng-click="back()" type="button" class="btn btn-info taskB">Next Pass</button>
