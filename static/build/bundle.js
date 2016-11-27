@@ -42734,7 +42734,7 @@ var bundle =
 		$scope.data = _questing2.default;
 		$scope.checkPass = function (pass) {
 			for (var i = 0; i < $scope.data.length; i++) {
-				console.info('pass', pass, '$scope.data[i]', $scope.data[i]);
+				//console.info('pass',pass, '$scope.data[i]',$scope.data[i])
 				if ($scope.data[i].pass == pass) return $scope.data[i].text;
 			}
 			return false;
@@ -42790,7 +42790,7 @@ var bundle =
 					// alert(password);
 					scope.request = scope.checkPass(password);
 					// scope.flag = false;
-					console.log(scope.request);
+					//console.log(scope.request);
 					if (scope.request == false) {
 						scope.error = true;
 						// scope.task = false;
