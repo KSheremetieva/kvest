@@ -42785,15 +42785,28 @@ var bundle =
 			link: function link(scope, element, attributes) {
 				scope.password = 'enter your pass';
 				scope.flag = true;
+				scope.error = false;
 				scope.check = function (password) {
 					// alert(password);
-					scope.recuest = scope.checkPass(password);
-					scope.flag = false;
-					console.log(scope.recuest);
+					scope.request = scope.checkPass(password);
+					// scope.flag = false;
+					console.log(scope.request);
+					if (scope.request == false) {
+						scope.error = true;
+						// scope.task = false;
+						// scope.flag = false;
+					}
+
+					if (scope.request != false) {
+						scope.flag = false;
+						scope.error = false;
+						scope.task = true;
+					}
 				};
 
 				scope.back = function () {
 					scope.flag = true;
+					scope.task = false;
 				};
 			}
 		};
@@ -42803,7 +42816,7 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div ng-if=\"flag\" class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"h1\">Your Password</h1>\n\t</div>\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB\">Move On</button>\n</div>\n\n\n\n<div ng-if=\"recuest == undefined\" class=\"alert alert-danger error\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>\n\n<div ng-if=\"!flag\" class=\"col-xs-6 center\">\n<div ng-if=\"quest != false\" class=\"alert alert-info task\">\n  <strong>YOUR TASK:</strong> {{!!recuest?recuest:'Nan'}}\n</div>\n\n<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\n</div>\n";
+	module.exports = "<div ng-if=\"flag\" class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"h1\">Your Password</h1>\n\t</div>\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB\">Move On</button>\n</div>\n\n\n\n<div ng-if=\"error\" class=\"alert alert-danger error\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>\n\n<div ng-if=\"task\" class=\"col-xs-6 center\">\n<div class=\"alert alert-info task\">\n  <strong>YOUR TASK:</strong> {{!!request?request:''}}\n</div>\n\n<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\n</div>\n";
 
 /***/ }
 /******/ ]);

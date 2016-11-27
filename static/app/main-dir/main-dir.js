@@ -13,15 +13,28 @@ app.directive('mainDir', function(){
 		link: function(scope, element, attributes){
 			scope.password = 'enter your pass';
 			scope.flag = true;
+			scope.error = false;
 			scope.check = password=>{
 				// alert(password);
-				scope.recuest = scope.checkPass(password);
-				scope.flag = false;
-				console.log(scope.recuest);
+				scope.request = scope.checkPass(password);
+				// scope.flag = false;
+				console.log(scope.request);
+				if(scope.request == false){
+					scope.error = true;
+					// scope.task = false;
+					// scope.flag = false;
+				}
+
+				if(scope.request != false){
+					scope.flag = false;
+					scope.error = false;
+					scope.task = true;
+				}
 			}
 
 			scope.back=()=>{
 				scope.flag = true;
+				scope.task = false;
 			}
 
 		}
