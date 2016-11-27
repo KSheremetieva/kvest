@@ -1,0 +1,63 @@
+input:hover{
+  border: 1px solid black;
+}
+.size{
+  text-align: center;
+}
+.passB{
+  margin:10px;
+}
+.error{
+  width: 100%;
+  position: absolute;
+  top:20%;
+  text-align: center;
+}
+.task{
+  text-align: center;
+  }
+@media (max-width: 768px){
+  input.size{
+    height: 70px;
+  font-size: 25px;
+  }
+  button.taskB, button.passB{
+    height:70px;
+    font-size: 25px;
+  }
+  div.center{
+    top: 15%;
+  }
+  button.passB{
+    left: 30%;
+    margin: 15px ;
+  }
+  h1.h1{
+    text-align: center;
+    font-size: 70px;
+  }
+.error{
+  top:0;
+  font-size: 25px;
+}
+  .task{
+    font-size: 25px;
+    text-align: center;
+  }
+  button.taskB{
+    width: 300px;
+    position: absolute;
+    left: 30%;
+
+  }
+}
+@media (max-width: 500px){
+  button.taskB{
+    left: 15%
+  }
+  div.center{
+    text-align: center;
+    top: 22%;
+  }
+}
+

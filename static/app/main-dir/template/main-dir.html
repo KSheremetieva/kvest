@@ -1,21 +1,21 @@
-<div ng-if="flag" class="col-xs-6 center">
+<div ng-if="flag" class="col-xs-12 col-md-6 col-md-offset-3 center">
 	<div class="relat">
  		<h1 class="h1">Your Password</h1>
 	</div>
 		<input ng-model="password" type="text" class="form-control size" aria-label="Text input with checkbox">
-		<button ng-click="check(password)" type="button" class="btn btn-default passB">Move On</button>
+		<button ng-click="check(password)" type="button" class="btn btn-default passB ">Move On</button>
 </div>
 
 
 
 <div ng-if="error" class="alert alert-danger error">
-  <b>Check Your Password!</b> It isn't correct.
+  <p><b>Check Your Password!</b> It isn't correct.</p>
 </div>
 
-<div ng-if="task" class="col-xs-6 center">
-<div class="alert alert-info task">
-  <strong>YOUR TASK:</strong> {{!!request?request:''}}
-</div>
+<div ng-if="task" class="col-sm-8 col-sm-offset-2 col-xs-12 center">
+	<div class="alert alert-info task">
+	  <p><strong>YOUR TASK : </strong> <br>{{!!request?request:''}}</p>
+	</div>
 
-<button ng-click="back()" type="button" class="btn btn-info taskB">Next Pass</button>
+	<button ng-click="back()" type="button" class="btn btn-info taskB col-sm-4 col-sm-offset-4">Next Pass</button>
 </div>

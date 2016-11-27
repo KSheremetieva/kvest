@@ -42816,7 +42816,7 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div ng-if=\"flag\" class=\"col-xs-6 center\">\n\t<div class=\"relat\">\n \t\t<h1 class=\"h1\">Your Password</h1>\n\t</div>\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\">\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB\">Move On</button>\n</div>\n\n\n\n<div ng-if=\"error\" class=\"alert alert-danger error\">\n  <b>Check Your Password!</b> It isn't correct.\n</div>\n\n<div ng-if=\"task\" class=\"col-xs-6 center\">\n<div class=\"alert alert-info task\">\n  <strong>YOUR TASK:</strong> {{!!request?request:''}}\n</div>\n\n<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\n</div>\n";
+	module.exports = "<div ng-if=\"flag\" class=\"col-xs-12 col-md-6 col-md-offset-3 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"h1\">Your Password</h1>\r\n\t</div>\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB \">Move On</button>\r\n</div>\r\n\r\n\r\n\r\n<div ng-if=\"error\" class=\"alert alert-danger error\">\r\n  <p><b>Check Your Password!</b> It isn't correct.</p>\r\n</div>\r\n\r\n<div ng-if=\"task\" class=\"col-sm-8 col-sm-offset-2 col-xs-12 center\">\r\n\t<div class=\"alert alert-info task\">\r\n\t  <p><strong>YOUR TASK : </strong> <br>{{!!request?request:''}}</p>\r\n\t</div>\r\n\r\n\t<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB col-sm-4 col-sm-offset-4\">Next Pass</button>\r\n</div>\r\n";
 
 /***/ }
 /******/ ]);
