@@ -18,7 +18,7 @@ app.directive('mainDir', function(){
 				// alert(password);
 				scope.request = scope.checkPass(password);
 				// scope.flag = false;
-				console.log(scope.request);
+				//console.log(scope.request);
 				if(scope.request == false){
 					scope.error = true;
 					// scope.task = false;
