@@ -18613,7 +18613,7 @@ input:hover {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   input.size {
     height: 70px;
     font-size: 25px;
@@ -18656,7 +18656,7 @@ input:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   button.taskB {
     left: 15%;
   }

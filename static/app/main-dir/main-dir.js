@@ -11,7 +11,7 @@ app.directive('mainDir', function(){
 		controller: ('mainCtrl'),
 		template: main_template,
 		link: function(scope, element, attributes){
-			scope.password = 'enter your pass';
+			scope.password;
 			scope.flag = true;
 			scope.error = false;
 			scope.check = password=>{
