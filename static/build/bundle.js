@@ -42740,6 +42740,7 @@ var bundle =
 			return false;
 		};
 	});
+	var div = document.getElementsByClassName('container');
 
 /***/ },
 /* 6 */
@@ -42750,7 +42751,7 @@ var bundle =
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-		exports.default = [{ pass: 'pass1', text: 'text1' }, { pass: 'pass2', text: 'text2' }, { pass: 'pass3', text: 'text3' }, { pass: 'pass4', text: 'text4' }, { pass: 'pass5', text: 'text5' }, { pass: 'pass6', text: 'text6' }, { pass: 'pass7', text: 'text7' }, { pass: 'pass8', text: 'text8' }];
+		exports.default = [{ pass: 'pass1', text: 'pass win' }, { pass: 'pass2', text: 'text2' }, { pass: 'pass3', text: 'text3' }, { pass: 'pass4', text: 'text4' }, { pass: 'pass5', text: 'text5' }, { pass: 'pass6', text: 'text6' }, { pass: 'pass7', text: 'text7' }, { pass: 'pass8', text: 'text8' }];
 
 /***/ },
 /* 7 */
@@ -42816,7 +42817,7 @@ var bundle =
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div ng-if=\"flag\" class=\"col-xs-12 col-md-6 col-md-offset-3 center\">\r\n\t<div class=\"relat\">\r\n \t\t<h1 class=\"h1\">Your Password</h1>\r\n\t</div>\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\" placeholder=\"Enter your pass\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB \">Move On</button>\r\n</div>\r\n\r\n\r\n\r\n<div ng-if=\"error\" class=\"alert alert-danger error\">\r\n  <p><b>Check Your Password!</b> It isn't correct.</p>\r\n</div>\r\n\r\n<div ng-if=\"task\" class=\"col-sm-8 col-sm-offset-2 col-xs-12 center\">\r\n\t<div class=\"alert alert-info task\">\r\n\t  <p><strong>YOUR TASK : </strong> <br>{{!!request?request:''}}</p>\r\n\t</div>\r\n\r\n\t<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB col-sm-4 col-sm-offset-4\">Next Pass</button>\r\n</div>\r\n";
+	module.exports = "<div class=\"container\">\r\n\t<div ng-if=\"flag\" class=\"center\">\r\n\t\t<h1 class=\"h1\">Your Password</h1>\r\n\t\t<input ng-model=\"password\" type=\"text\" class=\"form-control size\" aria-label=\"Text input with checkbox\" placeholder=\"Enter your pass 'pass1'\">\r\n\t\t<button ng-click=\"check(password)\" type=\"button\" class=\"btn btn-default passB \">Move On</button>\r\n\t</div>\r\n\r\n\r\n\t<div ng-if=\"error\" class=\"alert alert-danger error\">\r\n\t  <p><b>Check Your Password!</b> It isn't correct.</p>\r\n\t</div>\r\n\r\n\t<div ng-if=\"task\" class=\"center\">\r\n\t\t<div class=\"alert alert-info task\">\r\n\t\t  <p><strong>YOUR TASK : </strong> <br>{{!!request?request:''}}</p>\r\n\t\t</div>\r\n\r\n\t\t<button ng-click=\"back()\" type=\"button\" class=\"btn btn-info taskB\">Next Pass</button>\r\n\t</div>\r\n</div>";
 
 /***/ }
 /******/ ]);

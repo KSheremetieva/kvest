@@ -24,8 +24,8 @@
 	// position: absolute;
 	// top: 30%;
 	// left: 5%;
-	position: absolute;
-	top: 25%;
+	//position: absolute;
+	//top: 25%;
 	//left:25%;
 
 	// border: 1px solid;
@@ -52,12 +52,13 @@
 }
 
 .passB{
+	margin: 10px;
 	// height: 50px;
 	// font-size: 45px;
 	// line-height: 50px;
-	position: absolute;
+	//position: absolute;
 	// bottom: 40%;
-	left: 70%;
+	float: right;
 	animation: 1s slideOutDown;
 }
 

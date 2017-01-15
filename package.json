@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazminaolya/app.git"
+    "url": "git+https://github.com/Vadim1010/Inspection-pass-Angular.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kazminaolya/app/issues"
+    "url": "https://github.com/Vadim1010/Inspection-pass-Angular/issues"
   },
-  "homepage": "https://github.com/kazminaolya/app#readme",
+  "homepage": "https://github.com/Vadim1010/Inspection-pass-Angular#readme",
   "dependencies": {
     "angular": "^1.5.8",
     "animate-scss": "^3.2.1",
